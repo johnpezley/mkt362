@@ -179,3 +179,37 @@ body {
     margin-right: 10px;
     text-decoration: none;
 }
+
+/* Logo Box Styling */
+.logo-box {
+    border-right: 2px solid #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+/* JP Monogram Logo */
+.jp-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #2b3a26; /* Dark forest/sage accent */
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 8px; /* Slightly rounded box layout */
+    border: 2px solid #000000;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.jp-logo:hover {
+    background-color: #9CAF88; /* Sage green background on hover */
+    color: #000000;
+    transform: scale(1.05);
+}
