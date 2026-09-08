@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (headerElement) {
         headerElement.innerHTML = `
             <div class="logo-box">
-                <h1>Logo</h1>
+                <h1>JP</h1>
             </div>
             <div class="header-right">
                 <div class="info-graphics-bar">
