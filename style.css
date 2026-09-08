@@ -1,0 +1,181 @@
+/* Reset and Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /* Sage Green background for 10% margins on left/right and standard body background */
+    background-color: #9CAF88; 
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Page Container: Keeps content centered and leaves 10% screen space on edges */
+.site-wrapper {
+    width: 80vw;             /* Takes 80% of viewport width */
+    margin: 0 auto;          /* Centers container, leaving 10% space on left & right */
+    background-color: #ffffff; /* White canvas background matching wireframe */
+    border: 2px solid #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= HEADER AREA ================= */
+.site-header {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    border-bottom: 2px solid #000000;
+}
+
+.logo-box {
+    border-right: 2px solid #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box h1 {
+    font-size: 2.2rem;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-graphics-bar {
+    padding: 15px;
+    background-color: #f4f6f3;
+    border-bottom: 1px solid #000000;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.nav-bar-primary {
+    padding: 10px 15px;
+    border-bottom: 1px solid #000000;
+}
+
+.nav-bar-secondary {
+    padding: 8px 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2b3a26;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MAIN CONTENT LAYOUT ================= */
+.main-container {
+    display: grid;
+    grid-template-columns: 220px 1fr 240px; /* Sidebar | Content | Sticky Sidebar */
+    flex: 1;
+}
+
+/* Left Sidebar Navigation */
+.sidebar-left {
+    border-right: 2px solid #000000;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.sidebar-left h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.sidebar-left ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar-left li {
+    margin-bottom: 8px;
+}
+
+.sidebar-left a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Center Main Area */
+.content-area {
+    padding: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 180px;
+    border: 2px solid #000000;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.main-text {
+    font-size: 1rem;
+}
+
+.main-text h2 {
+    margin-bottom: 10px;
+}
+
+/* Right Sticky Sidebar */
+.sidebar-right {
+    border-left: 2px solid #000000;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.sticky-content {
+    position: sticky;
+    top: 20px;
+}
+
+.sticky-content h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.sticky-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* ================= FOOTER ================= */
+.site-footer {
+    border-top: 2px solid #000000;
+    padding: 15px;
+    text-size: 0.85rem;
+    background-color: #f4f6f3;
+}
+
+.footer-links {
+    margin-top: 5px;
+}
+
+.footer-links a {
+    color: #2b3a26;
+    margin-right: 10px;
+    text-decoration: none;
+}
