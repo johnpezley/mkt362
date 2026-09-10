@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - GitHub Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Styles for Documentation Page */
+        .docs-container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .docs-nav {
+            background-color: #f4f6f3;
+            border: 1px solid #9CAF88;
+            border-radius: 4px;
+            padding: 15px;
+        }
+
+        .docs-nav h4 {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #2b3a26;
+        }
+
+        .docs-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .docs-nav li {
+            margin-bottom: 8px;
+        }
+
+        .docs-nav a {
+            color: #2b3a26;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .docs-nav a:hover {
+            text-decoration: underline;
+            color: #9CAF88;
+        }
+
+        .docs-content {
+            background-color: #ffffff;
+        }
+
+        .docs-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .docs-section:last-child {
+            border-bottom: none;
+        }
+
+        .docs-section h3 {
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+            color: #2b3a26;
+        }
+
+        .docs-section h4 {
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+            color: #2b3a26;
+        }
+
+        .docs-section p {
+            margin-bottom: 12px;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 12px;
+            margin: 12px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #333;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0;
+        }
+
+        .feature-list li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+            color: #555555;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #9CAF88;
+            font-weight: bold;
+        }
+
+        .install-steps {
+            background-color: #f9f9f9;
+            border-left: 4px solid #9CAF88;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .install-steps ol {
+            margin-left: 20px;
+            color: #555555;
+        }
+
+        .install-steps li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-wrapper">
+        <!-- Dynamic Header (Includes Logo & Top Nav from nav.js) -->
+        <header class="site-header" id="header-component"></header>
+
+        <!-- Main Body Area -->
+        <div class="main-container">
+            
+            <!-- Left Sidebar Navigation (Loaded dynamically from nav.js) -->
+            <aside class="sidebar-left" id="sidebar-nav-component"></aside>
+
+            <!-- Main Content Area -->
+            <main class="content-area">
+                <!-- Hero Image / Banner -->
+                <div class="hero-image">
+                    📚 Documentation & Guides
+                </div>
+
+                <!-- Main Section Content -->
+                <article class="main-text">
+                    <h2>Developer Documentation</h2>
+                    <p style="margin-bottom: 20px;">
+                        Comprehensive guides, API references, and tutorials for using our open-source projects. Find installation instructions, configuration options, and best practices for integration.
+                    </p>
+
+                    <!-- Documentation Container with Navigation -->
+                    <div class="docs-container">
+                        
+                        <!-- Left Documentation Navigation -->
+                        <aside class="docs-nav">
+                            <h4>Getting Started</h4>
+                            <ul>
+                                <li><a href="#installation">Installation</a></li>
+                                <li><a href="#quickstart">Quick Start</a></li>
+                                <li><a href="#requirements">Requirements</a></li>
+                            </ul>
+
+                            <h4 style="margin-top: 20px;">API Reference</h4>
+                            <ul>
+                                <li><a href="#api-overview">Overview</a></li>
+                                <li><a href="#endpoints">Endpoints</a></li>
+                                <li><a href="#authentication">Authentication</a></li>
+                            </ul>
+
+                            <h4 style="margin-top: 20px;">Guides</h4>
+                            <ul>
+                                <li><a href="#configuration">Configuration</a></li>
+                                <li><a href="#deployment">Deployment</a></li>
+                                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                            </ul>
+                        </aside>
+
+                        <!-- Main Documentation Content -->
+                        <div class="docs-content">
+
+                            <!-- Installation Section -->
+                            <section class="docs-section" id="installation">
+                                <h3>Installation</h3>
+                                <p>Get up and running with our projects in just a few minutes.</p>
+
+                                <h4>Requirements</h4>
+                                <ul class="feature-list">
+                                    <li>Node.js v14.0 or higher</li>
+                                    <li>npm v6.0 or yarn v1.22+</li>
+                                    <li>Git for version control</li>
+                                    <li>Modern web browser (Chrome, Firefox, Safari, Edge)</li>
+                                </ul>
+
+                                <h4>Installation Steps</h4>
+                                <div class="install-steps">
+                                    <ol>
+                                        <li>Clone the repository:
+                                            <div class="code-block">git clone https://github.com/johnpezley/project-name.git</div>
+                                        </li>
+                                        <li>Navigate to project directory:
+                                            <div class="code-block">cd project-name</div>
+                                        </li>
+                                        <li>Install dependencies:
+                                            <div class="code-block">npm install</div>
+                                        </li>
+                                        <li>Start development server:
+                                            <div class="code-block">npm start</div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </section>
+
+                            <!-- Quick Start Section -->
+                            <section class="docs-section" id="quickstart">
+                                <h3>Quick Start</h3>
+                                <p>Get started with basic usage in under 5 minutes.</p>
+
+                                <h4>Basic Setup</h4>
+                                <p>After installation, create a simple configuration file to initialize the project:</p>
+                                <div class="code-block">
+const Project = require('project-name');
+const config = {
+  theme: 'sage-green',
+  layout: '80vw',
+  debug: false
+};
+const app = new Project(config);
+app.initialize();
+                                </div>
+                            </section>
+
+                            <!-- API Reference Section -->
+                            <section class="docs-section" id="api-overview">
+                                <h3>API Reference</h3>
+                                <p>Complete API documentation for all available methods and endpoints.</p>
+
+                                <h4>Core Methods</h4>
+                                <ul class="feature-list">
+                                    <li><strong>initialize()</strong> - Initialize the application with configuration</li>
+                                    <li><strong>render()</strong> - Render components to the DOM</li>
+                                    <li><strong>configure(options)</strong> - Update runtime configuration</li>
+                                    <li><strong>destroy()</strong> - Clean up and remove all components</li>
+                                </ul>
+                            </section>
+
+                            <!-- Authentication Section -->
+                            <section class="docs-section" id="authentication">
+                                <h3>Authentication</h3>
+                                <p>Learn how to authenticate with our API endpoints using tokens and API keys.</p>
+
+                                <h4>API Token Authentication</h4>
+                                <p>Include your API token in the request header:</p>
+                                <div class="code-block">
+Authorization: Bearer YOUR_API_TOKEN
+Content-Type: application/json
+                                </div>
+
+                                <p>Obtain your API token from your account dashboard under Settings > API Tokens.</p>
+                            </section>
+
+                            <!-- Configuration Section -->
+                            <section class="docs-section" id="configuration">
+                                <h3>Configuration Guide</h3>
+                                <p>Customize your project with various configuration options.</p>
+
+                                <h4>Configuration Object</h4>
+                                <div class="code-block">
+{
+  "theme": "sage-green",
+  "viewport": "80vw",
+  "headerHeight": "auto",
+  "sidebarWidth": "220px",
+  "responsive": true,
+  "debug": false,
+  "cache": true
+}
+                                </div>
+                            </section>
+
+                            <!-- Deployment Section -->
+                            <section class="docs-section" id="deployment">
+                                <h3>Deployment</h3>
+                                <p>Deploy your application to production environments.</p>
+
+                                <h4>GitHub Pages Deployment</h4>
+                                <p>Our projects are optimized for GitHub Pages hosting. Follow these steps:</p>
+                                <div class="install-steps">
+                                    <ol>
+                                        <li>Build your production assets: <code>npm run build</code></li>
+                                        <li>Commit changes to your repository</li>
+                                        <li>Push to the <code>gh-pages</code> branch</li>
+                                        <li>Enable GitHub Pages in repository settings</li>
+                                    </ol>
+                                </div>
+                            </section>
+
+                            <!-- Troubleshooting Section -->
+                            <section class="docs-section" id="troubleshooting">
+                                <h3>Troubleshooting</h3>
+                                <p>Common issues and their solutions.</p>
+
+                                <h4>Port Already in Use</h4>
+                                <p>If port 3000 is already in use, specify a different port:</p>
+                                <div class="code-block">PORT=3001 npm start</div>
+
+                                <h4>Module Not Found</h4>
+                                <p>Clear your node_modules and reinstall dependencies:</p>
+                                <div class="code-block">
+rm -rf node_modules package-lock.json
+npm install
+                                </div>
+
+                                <h4>Build Failures</h4>
+                                <p>Ensure you're using a compatible Node.js version. Check with <code>node --version</code> and upgrade if necessary.</p>
+                            </section>
+
+                        </div>
+                    </div>
+                </article>
+            </main>
+
+            <!-- Right Sticky Sidebar -->
+            <aside class="sidebar-right">
+                <div class="sticky-content">
+                    <h3>Documentation Info</h3>
+                    <ul class="stats-list">
+                        <li><strong>Last Updated:</strong> Recently</li>
+                        <li><strong>Version:</strong> 2.1.0</li>
+                        <li><strong>Status:</strong> Active</li>
+                        <li><strong>Support:</strong> Community</li>
+                    </ul>
+
+                    <h3 style="margin-top: 20px;">Resources</h3>
+                    <ul>
+                        <li><a href="#" style="color: #2b3a26;">GitHub Repository</a></li>
+                        <li><a href="#" style="color: #2b3a26;">API Changelog</a></li>
+                        <li><a href="#" style="color: #2b3a26;">Community Forum</a></li>
+                        <li><a href="#" style="color: #2b3a26;">Report a Bug</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>Footer: Contains copyright info, &copy; <span id="year"></span>, primary links, contact, privacy statement, webmaster email address.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Statement</a> | 
+                <a href="#">Contact</a> | 
+                <a href="#">Webmaster Email</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script imports -->
+    <script src="nav.js"></script>
+    <script>
+        // Dynamic copyright year update
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
