@@ -179,33 +179,3 @@ body {
     margin-right: 10px;
     text-decoration: none;
 }
-
-/* Logo Container Area */
-.logo-box {
-    border-right: 2px solid #000000;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    overflow: hidden;
-}
-
-.logo-link {
-    display: inline-block;
-    line-height: 0;
-}
-
-/* LEGO Image Sizing and Hover Effect */
-.site-logo {
-    max-width: 100%;
-    max-height: 80px; /* Adjust height to fit header proportions */
-    height: auto;
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.2s ease;
-}
-
-.logo-link:hover .site-logo {
-    transform: scale(1.05); /* Subtle zoom effect on hover */
-}
