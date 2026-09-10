@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 <nav class="nav-bar-primary">
                     <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </nav>
                 <nav class="nav-bar-secondary">
