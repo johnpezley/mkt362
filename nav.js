@@ -4,9 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (headerElement) {
         headerElement.innerHTML = `
             <div class="logo-box">
-                <a href="index.html" class="logo-link">
-                    <img src="lego-logo.png" alt="LEGO Logo" class="site-logo">
-                </a>
+                <h1>Logo</h1>
             </div>
             <div class="header-right">
                 <div class="info-graphics-bar">
