@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="docs.html">Documentation</a></li>
                         <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
                     </ul>
                 </nav>
                 <nav class="nav-bar-secondary">
