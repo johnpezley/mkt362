@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site-wrapper">
+        <!-- Dynamic Header loaded by nav.js -->
+        <header class="site-header" id="header-component"></header>
+
+        <!-- Main Body Area -->
+        <div class="main-container">
+            
+            <!-- Left Sidebar Navigation loaded by nav.js -->
+            <aside class="sidebar-left" id="sidebar-nav-component"></aside>
+
+            <!-- Main Content Center -->
+            <main class="content-area">
+                <div class="hero-image">
+                    Hero image at top
+                </div>
+
+                <article class="main-text">
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to our company. We are dedicated to providing exceptional service and products to our customers. 
+                        With years of experience in the industry, our team has developed a deep understanding of market needs and 
+                        customer expectations. Our mission is to deliver innovative solutions that make a real difference in people's lives.
+                    </p>
+                    <p>
+                        Our core values guide everything we do. We believe in integrity, transparency, and customer satisfaction. 
+                        Each member of our team is committed to excellence and bringing their unique skills to create outstanding results. 
+                        We take pride in building lasting relationships with our clients and partners.
+                    </p>
+                    <p>
+                        Over the years, we have grown from a small startup to a trusted name in our field. Our success is built on 
+                        the foundation of hard work, innovation, and a genuine passion for what we do. We continuously evolve and 
+                        adapt to meet the changing needs of the market, ensuring we remain at the forefront of our industry.
+                    </p>
+                </article>
+            </main>
+
+            <!-- Sticky Right Sidebar -->
+            <aside class="sidebar-right">
+                <div class="sticky-content">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>Our Team</li>
+                        <li>Company History</li>
+                        <li>Awards & Recognition</li>
+                        <li>Careers</li>
+                        <li>Follow Us</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>Footer: Contains copyright info, &copy; <span id="year"></span>, primary links, contact, privacy statement, webmaster email address.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Statement</a> | 
+                <a href="#">Contact</a> | 
+                <a href="#">Webmaster Email</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Load Reusable Navigation JS -->
+    <script src="nav.js"></script>
+    <script>
+        // Auto update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
