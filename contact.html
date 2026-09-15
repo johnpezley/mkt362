@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site-wrapper">
+        <!-- Dynamic Header loaded by nav.js -->
+        <header class="site-header" id="header-component"></header>
+
+        <!-- Main Body Area -->
+        <div class="main-container">
+            
+            <!-- Left Sidebar Navigation loaded by nav.js -->
+            <aside class="sidebar-left" id="sidebar-nav-component"></aside>
+
+            <!-- Main Content Center -->
+            <main class="content-area">
+                <div class="hero-image">
+                    Contact Us
+                </div>
+
+                <article class="main-text">
+                    <h2>Contact Us</h2>
+                    <p>
+                        We'd love to hear from you. Use the form below to send us a message and we'll get back to you shortly.
+                    </p>
+
+                    <!-- Google Form embed: replace the iframe below with your full Google Form embed code. -->
+                    <!-- Example embed (replace FORM_ID with your form's ID): -->
+                    <!--
+                    <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    -->
+
+                    <!-- Placeholder iframe - replace the src value with your Google Form embed code or paste the full form iframe here. -->
+                    <div class="form-wrapper">
+                        <iframe id="google-form" src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+
+                    <p>If the form does not load, you can open it directly: <a id="form-link" href="https://docs.google.com/forms/d/e/FORM_ID/viewform" target="_blank" rel="noopener">Open the contact form</a>.</p>
+                </article>
+            </main>
+
+            <!-- Sticky Right Sidebar -->
+            <aside class="sidebar-right">
+                <div class="sticky-content">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>Our Team</li>
+                        <li>Company History</li>
+                        <li>Awards & Recognition</li>
+                        <li>Careers</li>
+                        <li>Follow Us</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>Footer: Contains copyright info, &copy; <span id="year"></span>, primary links, contact, privacy statement, webmaster email address.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Statement</a> | 
+                <a href="contact.html">Contact</a> | 
+                <a href="#">Webmaster Email</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Load Reusable Navigation JS -->
+    <script src="nav.js"></script>
+    <script>
+        // Auto update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // If you provide a direct Google Form URL in the iframe's src, this keeps the link in sync.
+        (function(){
+            var iframe = document.getElementById('google-form');
+            var link = document.getElementById('form-link');
+            if (iframe && link) {
+                var src = iframe.getAttribute('src');
+                // only update link if src is a valid url
+                if (src && src.indexOf('docs.google.com') !== -1) {
+                    link.setAttribute('href', src);
+                }
+            }
+        })();
+    </script>
+</body>
+</html>
