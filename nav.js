@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h1>Logo</h1>
             </div>
             <div class="header-right">
-                <div class="info-graphics-bar">
-                    This area is for informational graphics which describe in images what your site is about
-                </div>
                 <nav class="nav-bar-primary">
                     <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
