@@ -30,12 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li><a href="#">Repositories</a></li>
                 <li><a href="#">Settings</a></li>
             </ul>
-            
-            <h3>Secondary navigation if needed</h3>
-            <ul>
-                <li><a href="#">Sub-item 1</a></li>
-                <li><a href="#">Sub-item 2</a></li>
-            </ul>
         `;
     }
 });
