@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (headerElement) {
         headerElement.innerHTML = `
             <div class="logo-box">
-                <h1>Logo</h1>
+                <h1>JP</h1>
             </div>
             <div class="header-right">
                 <nav class="nav-bar-primary">
@@ -16,13 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <li><a href="contact.html">Contact</a></li>
 
                     </ul>
-                </nav>
-                <nav class="nav-bar-secondary">
-                    <ul class="nav-links">
-                        <li><a href="#">Secondary Link 1</a></li>
-                        <li><a href="#">Secondary Link 2</a></li>
-                    </ul>
-                </nav>
             </div>
         `;
     }
