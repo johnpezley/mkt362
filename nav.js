@@ -19,17 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
     }
-
-    // 2. Render Left Sidebar Navigation
-    const sidebarNavElement = document.getElementById("sidebar-nav-component");
-    if (sidebarNavElement) {
-        sidebarNavElement.innerHTML = `
-            <h3>Primary Navigation</h3>
-            <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="#">Repositories</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        `;
-    }
 });
