@@ -19,16 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    // 2. Render Left Sidebar Navigation
+    // 2. Left Sidebar Navigation - DISABLED
+    // Hiding left sidebar on all pages
     const sidebarNavElement = document.getElementById("sidebar-nav-component");
     if (sidebarNavElement) {
-        sidebarNavElement.innerHTML = `
-            <h3>Primary Navigation</h3>
-            <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="#">Repositories</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        `;
+        sidebarNavElement.style.display = "none";
+    }
+
+    // 3. Right Sidebar - DISABLED
+    // Hiding right sidebar on all pages
+    const rightSidebarElement = document.getElementById("sidebar-right-component");
+    if (rightSidebarElement) {
+        rightSidebarElement.style.display = "none";
     }
 });
