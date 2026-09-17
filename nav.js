@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <h3>Primary Navigation</h3>
             <ul>
                 <li><a href="index.html">Dashboard</a></li>
-                <li><a href="#">Repositories</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="repositories.html">Repositories</a></li>
+                <li><a href="settings.html">Settings</a></li>
             </ul>
         `;
     }
