@@ -61,10 +61,6 @@ body {
     border-bottom: 1px solid #000000;
 }
 
-.nav-bar-secondary {
-    padding: 8px 15px;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
