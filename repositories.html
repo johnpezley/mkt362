@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header" id="header-component"></header>
+
+        <div class="main-container">
+            <aside class="sidebar-left" id="sidebar-nav-component"></aside>
+
+            <main class="content-area">
+                <div class="hero-image">Repositories</div>
+
+                <article class="main-text">
+                    <h2>Repositories</h2>
+                    <p>Browse the projects and repositories included in this showcase.</p>
+
+                    <div class="project-grid" style="margin-top: 20px;">
+                        <div class="project-card">
+                            <div>
+                                <h3><a href="projects.html">Featured Projects</a></h3>
+                                <p>Explore the current projects and experiments in the portfolio.</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div>
+                                <h3><a href="docs.html">Documentation</a></h3>
+                                <p>Read guides and reference material for the showcased projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="sidebar-right">
+                <div class="sticky-content">
+                    <h3>Repository Overview</h3>
+                    <ul>
+                        <li>Featured projects</li>
+                        <li>Project documentation</li>
+                        <li>Web development resources</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <p>Footer: Contains copyright info, &copy; <span id="year"></span>, primary links, contact, privacy statement, webmaster email address.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Statement</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="nav.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
