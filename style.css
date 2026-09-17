@@ -8,16 +8,16 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     /* Sage Green background for 10% margins on left/right and standard body background */
-    background-color: #9CAF88;
+    background-color: #9CAF88; 
     color: #333333;
     line-height: 1.5;
 }
 
 /* Page Container: Keeps content centered and leaves 10% screen space on edges */
 .site-wrapper {
-    width: 80vw;
-    margin: 0 auto;
-    background-color: #ffffff;
+    width: 80vw;             /* Takes 80% of viewport width */
+    margin: 0 auto;          /* Centers container, leaving 10% space on left & right */
+    background-color: #ffffff; /* White canvas background matching wireframe */
     border: 2px solid #000000;
     min-height: 100vh;
     display: flex;
@@ -27,7 +27,7 @@ body {
 /* ================= HEADER AREA ================= */
 .site-header {
     display: grid;
-    grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+    grid-template-columns: 220px 1fr;
     border-bottom: 2px solid #000000;
 }
 
@@ -85,17 +85,15 @@ body {
 /* ================= MAIN CONTENT LAYOUT ================= */
 .main-container {
     display: grid;
-    /* Fluid sidebars leave the center column all remaining space. */
-    grid-template-columns: minmax(160px, 20%) minmax(0, 1fr) minmax(180px, 22%);
+    grid-template-columns: 220px 1fr 240px; /* Sidebar | Content | Sticky Sidebar */
     flex: 1;
 }
 
 /* Left Sidebar Navigation */
 .sidebar-left {
     border-right: 2px solid #000000;
-    padding: clamp(12px, 2vw, 20px);
+    padding: 20px;
     background-color: #fafafa;
-    min-width: 0;
 }
 
 .sidebar-left h3 {
@@ -129,22 +127,20 @@ body {
 
 /* Center Main Area */
 .content-area {
-    padding: clamp(12px, 2vw, 20px);
-    min-width: 0;
+    padding: 20px;
 }
 
 .hero-image {
     width: 100%;
-    /* Scales with the available page width while keeping usable limits. */
-    height: clamp(120px, 18vw, 240px);
+    height: 180px;
     border: 2px solid #000000;
     background-color: #f0f0f0;
     display: flex;
     align-items: center;
-    padding: 0 clamp(10px, 2vw, 20px);
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding-left: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: clamp(15px, 2.5vw, 25px);
+    margin-bottom: 25px;
 }
 
 .main-text {
@@ -162,23 +158,23 @@ body {
     margin: 20px 0;
     overflow: hidden;
 }
-
+/*
 .form-wrapper iframe {
     width: 100%;
+    height: 100%;
     display: block;
 }
-
+*/
 /* Right Sticky Sidebar */
 .sidebar-right {
     border-left: 2px solid #000000;
-    padding: clamp(12px, 2vw, 20px);
+    padding: 20px;
     background-color: #fafafa;
-    min-width: 0;
 }
 
 .sticky-content {
     position: sticky;
-    top: clamp(10px, 2vw, 20px);
+    top: 20px;
 }
 
 .sticky-content h3 {
@@ -195,7 +191,7 @@ body {
 .site-footer {
     border-top: 2px solid #000000;
     padding: 15px;
-    font-size: 0.85rem;
+    text-size: 0.85rem;
     background-color: #f4f6f3;
 }
 
@@ -222,18 +218,18 @@ body {
         border-left: none;
         border-right: none;
     }
-
+    
     .site-header {
         grid-template-columns: 1fr;
     }
-
+    
     .logo-box {
         border-right: none;
         border-bottom: 2px solid #000000;
         padding: 15px;
         min-height: 77px;
     }
-
+    
     .logo-box h1 {
         font-size: 1.8rem;
     }
@@ -241,47 +237,47 @@ body {
     .nav-bar-primary {
         min-height: 77px;
     }
-
+    
     .nav-links {
         gap: 10px;
         font-size: 0.9rem;
     }
-
+    
     .main-container {
         grid-template-columns: 1fr;
     }
-
+    
     .sidebar-left,
     .sidebar-right {
         border: none;
         border-top: 2px solid #000000;
         padding: 15px;
     }
-
+    
     .sidebar-left {
         background-color: transparent;
     }
-
+    
     .sidebar-right {
         background-color: transparent;
         position: relative;
     }
-
+    
     .sticky-content {
         position: relative;
         top: 0;
     }
-
+    
     .content-area {
         padding: 15px;
     }
-
+    
     .hero-image {
-        height: clamp(120px, 25vw, 180px);
+        height: 120px;
         font-size: 1.2rem;
         padding-left: 15px;
     }
-
+    
     .form-wrapper {
         max-width: 100%;
     }
@@ -294,22 +290,22 @@ body {
         border: none;
         border-radius: 0;
     }
-
+    
     body {
         background-color: #ffffff;
     }
-
+    
     .site-header {
         grid-template-columns: 1fr;
         border-bottom: 1px solid #000000;
     }
-
+    
     .logo-box {
         padding: 10px;
         min-height: 56px;
         border: none;
     }
-
+    
     .logo-box h1 {
         font-size: 1.5rem;
     }
@@ -317,42 +313,42 @@ body {
     .nav-bar-primary {
         min-height: 56px;
     }
-
+    
     .info-graphics-bar {
         padding: 10px;
         font-size: 0.8rem;
         border-bottom: 1px solid #e0e0e0;
     }
-
+    
     .nav-bar-primary {
         padding: 8px 10px;
         border-bottom: 1px solid #e0e0e0;
     }
-
+    
     .nav-bar-secondary {
         padding: 5px 10px;
     }
-
+    
     .nav-links {
         gap: 8px;
         font-size: 0.8rem;
     }
-
+    
     .sidebar-left,
     .sidebar-right {
         padding: 10px;
         border-top: 1px solid #e0e0e0;
     }
-
+    
     .sidebar-left h3,
     .sticky-content h3 {
         font-size: 0.95rem;
     }
-
+    
     .content-area {
         padding: 10px;
     }
-
+    
     .hero-image {
         height: 100px;
         font-size: 1rem;
@@ -360,26 +356,26 @@ body {
         border: 1px solid #000000;
         margin-bottom: 15px;
     }
-
+    
     .main-text {
         font-size: 0.95rem;
     }
-
+    
     .main-text h2 {
         font-size: 1.3rem;
     }
-
+    
     .form-wrapper {
         max-width: 100%;
         margin: 15px 0;
     }
-
+    
     .site-footer {
         padding: 10px;
         font-size: 0.75rem;
         border-top: 1px solid #e0e0e0;
     }
-
+    
     .footer-links a {
         display: block;
         margin: 5px 0;
@@ -391,17 +387,17 @@ body {
     .logo-box h1 {
         font-size: 1.2rem;
     }
-
+    
     .nav-links {
         gap: 5px;
         font-size: 0.75rem;
     }
-
+    
     .sidebar-left h3,
     .sticky-content h3 {
         font-size: 0.85rem;
     }
-
+    
     .sidebar-left li {
         margin-bottom: 5px;
     }
