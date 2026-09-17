@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header" id="header-component"></header>
+
+        <div class="main-container">
+            <aside class="sidebar-left" id="sidebar-nav-component"></aside>
+
+            <main class="content-area">
+                <div class="hero-image">Settings</div>
+
+                <article class="main-text">
+                    <h2>Settings</h2>
+                    <p>Manage the preferences for this showcase website.</p>
+
+                    <form style="margin-top: 20px; max-width: 600px;">
+                        <fieldset style="padding: 20px; border: 1px solid #9CAF88;">
+                            <legend>Display Preferences</legend>
+                            <p style="margin: 12px 0;">
+                                <label>
+                                    <input type="checkbox" name="notifications">
+                                    Receive project updates
+                                </label>
+                            </p>
+                            <p style="margin: 12px 0;">
+                                <label>
+                                    <input type="checkbox" name="compact-view">
+                                    Use compact project cards
+                                </label>
+                            </p>
+                            <button type="button" style="margin-top: 8px; padding: 8px 14px; cursor: pointer;">Save Settings</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </main>
+
+            <aside class="sidebar-right">
+                <div class="sticky-content">
+                    <h3>Settings Info</h3>
+                    <ul>
+                        <li>Preferences are stored locally</li>
+                        <li>No account is required</li>
+                        <li>Changes apply to this browser</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <p>Footer: Contains copyright info, &copy; <span id="year"></span>, primary links, contact, privacy statement, webmaster email address.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Statement</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="nav.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
