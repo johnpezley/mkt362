@@ -115,6 +115,10 @@ body {
     color: #333;
 }
 
+.sidebar-left a:hover {
+    text-decoration: underline;
+}
+
 /* Center Main Area */
 .content-area {
     padding: 20px;
