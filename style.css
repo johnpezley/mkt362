@@ -152,7 +152,7 @@ body {
 }
 
 /* Form wrapper for responsive iframes */
-.form-wrapper {
+/*.form-wrapper {
     width: 100%;
     max-width: 640px;
     margin: 20px 0;
@@ -164,7 +164,7 @@ body {
     height: auto;
     display: block;
 }
-
+/*
 /* Right Sticky Sidebar */
 .sidebar-right {
     border-left: 2px solid #000000;
