@@ -38,4 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
         privacyLink.href = "privacy.html";
         privacyLink.textContent = "Privacy Statement";
     });
+
+    // 4. Remove placeholder links that do not lead anywhere.
+    // Keep real page links and in-page anchors such as #installation intact.
+    document.querySelectorAll('a[href="#"], a[href=""], a[href="javascript:void(0)"]').forEach((placeholderLink) => {
+        const replacement = document.createElement("span");
+        replacement.innerHTML = placeholderLink.innerHTML;
+        replacement.className = placeholderLink.className;
+        replacement.style.cssText = placeholderLink.style.cssText;
+        replacement.setAttribute("aria-disabled", "true");
+        placeholderLink.replaceWith(replacement);
+    });
 });
