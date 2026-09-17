@@ -34,6 +34,7 @@ body {
 .logo-box {
     border-right: 2px solid #000000;
     padding: 20px;
+    min-height: 96px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,8 +58,11 @@ body {
 }
 
 .nav-bar-primary {
+    min-height: 96px;
     padding: 20px 15px;
     border-bottom: 1px solid #000000;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
@@ -223,10 +227,15 @@ body {
         border-right: none;
         border-bottom: 2px solid #000000;
         padding: 15px;
+        min-height: 77px;
     }
     
     .logo-box h1 {
         font-size: 1.8rem;
+    }
+
+    .nav-bar-primary {
+        min-height: 77px;
     }
     
     .nav-links {
@@ -293,11 +302,16 @@ body {
     
     .logo-box {
         padding: 10px;
+        min-height: 56px;
         border: none;
     }
     
     .logo-box h1 {
         font-size: 1.5rem;
+    }
+
+    .nav-bar-primary {
+        min-height: 56px;
     }
     
     .info-graphics-bar {
