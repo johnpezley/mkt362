@@ -195,6 +195,10 @@ body {
     text-decoration: none;
 }
 
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* ================= RESPONSIVE DESIGN ================= */
 
 /* Tablet: 768px and below */
