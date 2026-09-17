@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Statement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site-wrapper">
+        <header class="site-header" id="header-component"></header>
+
+        <div class="main-container">
+            <aside class="sidebar-left" id="sidebar-nav-component"></aside>
+
+            <main class="content-area">
+                <div class="hero-image">Privacy Statement</div>
+
+                <article class="main-text">
+                    <h2>Privacy Statement</h2>
+                    <p>
+                        Your privacy matters to us. This website is provided as a personal and educational project,
+                        and we aim to be transparent about the information collected when you visit.
+                    </p>
+
+                    <h3>Information we collect</h3>
+                    <p>
+                        We do not intentionally collect personal information through this website. Basic technical
+                        information, such as browser type or page views, may be processed by the hosting provider to
+                        operate, secure, and maintain the site.
+                    </p>
+
+                    <h3>Contact forms</h3>
+                    <p>
+                        If you submit information through the contact form, the information you provide may be
+                        processed by Google Forms and used to respond to your request. Please avoid submitting
+                        sensitive or confidential information.
+                    </p>
+
+                    <h3>Cookies and external services</h3>
+                    <p>
+                        This site does not intentionally use tracking cookies. Links or embedded services from third
+                        parties may have their own privacy policies and practices. Please review those policies when
+                        using an external service.
+                    </p>
+
+                    <h3>Updates</h3>
+                    <p>
+                        This privacy statement may be updated as the site changes. The current version will always be
+                        available from the Privacy Statement link in the footer.
+                    </p>
+                </article>
+            </main>
+
+            <aside class="sidebar-right">
+                <div class="sticky-content">
+                    <h3>Privacy at a glance</h3>
+                    <ul>
+                        <li>No intentional tracking cookies</li>
+                        <li>Contact submissions use Google Forms</li>
+                        <li>Do not submit sensitive information</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <p>Footer: Contains copyright info, &copy; <span id="year"></span>, primary links, contact, privacy statement, webmaster email address.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Statement</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="nav.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
