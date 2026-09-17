@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
     }
+
     // 2. Render Left Sidebar Navigation
     const sidebarNavElement = document.getElementById("sidebar-nav-component");
     if (sidebarNavElement) {
@@ -31,4 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul>
         `;
     }
+
+    // 3. Keep the privacy link consistent in every page footer.
+    document.querySelectorAll(".footer-links a:first-child").forEach((privacyLink) => {
+        privacyLink.href = "privacy.html";
+        privacyLink.textContent = "Privacy Statement";
+    });
 });
