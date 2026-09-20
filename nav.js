@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <ul>
                 <li><a href="index.html">Dashboard</a></li>
                 <li><a href="repositories.html">Repositories</a></li>
-                <li><a href="settings.html">Settings</a></li>
+                <li><a href="kermit.html">Picure of Kermit</a></li>
             </ul>
         `;
     }
