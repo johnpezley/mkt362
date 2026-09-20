@@ -206,7 +206,7 @@ body {
 /* ================= RESPONSIVE DESIGN ================= */
 
 /* Tablet: 768px and below */
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
     .site-wrapper {
         width: 95vw;
         border-left: none;
