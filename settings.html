@@ -3,17 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
+    <title>Picture of Kermit</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #fff;
-            color: #000;
-        }
-    </style>
 </head>
 <body>
+
+    <div class="site-wrapper">
+        <!-- Dynamic Header loaded by nav.js -->
+        <header class="site-header" id="header-component"></header>
+
+        <!-- Main Body Area -->
+        <div class="main-container">
+            
+            <!-- Left Sidebar Navigation loaded by nav.js -->
+            <aside class="sidebar-left" id="sidebar-nav-component"></aside>
+
+            <!-- Main Content Center -->
+            <main class="content-area">
+                <div class="hero-image">
+                    Picture of Kermit
+                </div>
+
+                <article class="main-text">
+                    <h2>Picture of Kermit</h2>
+                    <p>
+                        Welcome to the Picture of Kermit page.
+                    </p>
+                </article>
+            </main>
+
+            <!-- Sticky Right Sidebar -->
+            <aside class="sidebar-right">
+                <div class="sticky-content">
+                    <h3>Page Information</h3>
+                    <ul>
+                        <li>Picture of Kermit</li>
+                        <li>Part of the site navigation</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>Contains copyright info, &copy; <span id="year"></span>, primary links, contact, privacy statement, webmaster email address.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Statement</a> | 
+                <a href="contact.html">Contact</a> 
+            </div>
+        </footer>
+    </div>
+
+    <!-- Load Reusable Navigation JS -->
+    <script src="nav.js"></script>
+    <script>
+        // Auto update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
